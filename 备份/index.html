@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重工数科 - 智慧教育解决方案专家</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/template/1/cgsk/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- AI元素 -->
+    <div class="ai-element ai-element-1"></div>
+    <div class="ai-element ai-element-2"></div>
+    <div class="ai-element ai-element-3"></div>
+    
+    <!-- 导航栏 -->
+    <div class="nav-container">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="/template/1/cgsk/img/gongsiLOGO.png" alt="重工数科LOGO">
+            </div>
+            
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="/html/web/index.html" class="nav-link active" data-link="home">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/html/web/products.html" class="nav-link" data-link="products">产品展示</a>
+                    <ul class="dropdown">
+                        <li class="dropdown-item">
+                            <a href="/html/web/product-detail.html" class="dropdown-link">蓝鲸先生智慧教评系统</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="/html/web/product-detail-2.html" class="dropdown-link">海浪智学数字课程平台</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="/html/web/products.html" class="dropdown-link">实训平台</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="/html/web/products.html#yiwu-card" class="dropdown-link">重工易物</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="/html/web/products.html#university-card" class="dropdown-link">我的大学</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="news.html" class="nav-link" data-link="news">新闻资讯</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link" data-link="about">关于我们</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Banner轮播 -->
+    <section class="banner" id="home">
+        <div class="banner-slide active" style="background-image: url('https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')">
+            <div class="banner-content">
+                <h2 class="banner-title">智慧教育解决方案专家</h2>
+                <p class="banner-desc">重工数科致力于为教育行业提供创新的AI技术解决方案，推动教育数字化转型</p>
+                <!-- <a href="#products" class="btn">了解更多 <i class="fas fa-arrow-right"></i></a> -->
+            </div>
+        </div>
+        <div class="banner-slide" style="background-image:  url('https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')">
+            <div class="banner-content">
+                <h2 class="banner-title">AI赋能教育</h2>
+                <p class="banner-desc">打造智能化、个性化的在线学习体验，让教育更高效、更有趣</p>
+                <!-- <a href="#products" class="btn">产品详情 <i class="fas fa-arrow-right"></i></a> -->
+            </div>
+        </div>
+        <div class="banner-slide" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80')">
+            <div class="banner-content">
+                <h2 class="banner-title">产教融合特色服务</h2>
+                <p class="banner-desc">连接产业与教育，培养符合市场需求的高素质人才</p>
+                <!-- <a href="#services" class="btn">查看案例 <i class="fas fa-arrow-right"></i></a> -->
+            </div>
+        </div>
+        <div class="banner-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+    </section>
+
+    <!-- 侧边悬浮栏 -->
+    <div class="side-toolbar">
+        <div class="tool-item" id="customer-service">
+            <img src="/template/1/cgsk/img/rengongkefu.svg" alt="">
+            <span class="tooltip">在线客服</span>
+        </div>
+        <div class="tool-item" id="hotline">
+            <img src="/template/1/cgsk/img/phone.svg" alt="">
+            <span class="tooltip">热线咨询</span>
+        </div>
+        <div class="tool-item" id="feedback">
+            <img src="/template/1/cgsk/img/yijianfankui.svg" alt="">
+            <span class="tooltip">意见反馈</span>
+        </div>
+        <div class="tool-item" id="follow-us">
+            <img src="/template/1/cgsk/img/gongzhonghao.svg" alt="">
+            <span class="tooltip">关注我们</span>
+        </div>
+    </div>
+
+    <!-- 热线咨询对话框 -->
+    <div class="dialog-box" id="hotline-box" style="bottom: 330px;">
+        <div class="dialog-header">
+            <div class="dialog-title">热线咨询</div>
+            <div class="dialog-close" id="hotline-close">&times;</div>
+        </div>
+        <div class="dialog-body">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>400-888-8888</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>服务时间：周一至周五 9:00-18:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 关注我们对话框 -->
+    <div class="dialog-box" id="follow-box">
+        <div class="dialog-header">
+            <div class="dialog-title">关注我们</div>
+            <div class="dialog-close" id="follow-close">&times;</div>
+        </div>
+        <div class="dialog-body">
+            <div class="qr-container">
+                <img src="/template/1/cgsk/img/WXgongzhonghao.jpg" alt="关注我们二维码">
+                <p>扫描二维码关注公众号</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 在线客服对话框 -->
+    <div class="chat-box" id="chat-box">
+        <div class="chat-header">
+            <div class="chat-title">在线客服</div>
+            <div class="chat-close" id="chat-close">&times;</div>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="chat-message agent">
+                <div class="message-content">您好，我是蓝鲸科技客服，有什么可以帮您的吗？</div>
+            </div>
+        </div>
+        <div class="chat-footer">
+            <input type="text" class="chat-input" id="chat-input" placeholder="请输入您的问题...">
+            <button class="chat-send" id="chat-send">发送</button>
+        </div>
+    </div>
+
+    <!-- 意见反馈表单 -->
+    <div class="feedback-form" id="feedback-form">
+        <div class="feedback-header">
+            <div class="feedback-title">意见反馈</div>
+            <div class="feedback-close" id="feedback-close">&times;</div>
+        </div>
+        <form id="feedbackForm">
+            <div class="form-group">
+                <label for="feedback-name" class="form-label">姓名</label>
+                <input type="text" id="feedback-name" class="form-input" placeholder="请输入您的姓名">
+            </div>
+            <div class="form-group">
+                <label for="feedback-contact" class="form-label">联系方式</label>
+                <input type="text" id="feedback-contact" class="form-input" placeholder="请输入您的电话或邮箱">
+            </div>
+            <div class="form-group">
+                <label for="feedback-content" class="form-label">反馈内容</label>
+                <textarea id="feedback-content" class="form-textarea" placeholder="请输入您的反馈内容"></textarea>
+            </div>
+            <button type="submit" class="form-submit">提交反馈</button>
+        </form>
+    </div>
+
+    <!-- 业务体系 -->
+    <section class="section services" id="services">
+        <div class="container">
+            <h2 class="section-title">特色业务</h2>
+            <p class="section-desc">重工数科公司致力于人工智能技术在教育场景的深度应用，是专注于国内高等职业教育的数字课程教育服务商</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">技术驱动教育创新</h3>
+                    <p class="service-desc">
+                        我们运用人工智能、大数据、云计算等前沿技术，开发智能化教学工具和平台，提升教学效率和学习体验。通过技术创新，重新定义教育方式。
+                    </p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="service-title">产教融合特色服务</h3>
+                    <p class="service-desc">
+                        我们搭建产业与教育之间的桥梁，提供课程开发、实训基地建设、师资培训等一体化服务，培养符合产业需求的应用型人才。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品展示 -->
+    <section class="section products" id="products">
+        <div class="container">
+            <h2 class="section-title">核心产品</h2>
+            <p class="section-desc">自主研发覆盖职业教育数字课程建课服务、教学运营服务、教学评价及人工智能跟踪监测服务、电子实训实验室建设、产教融合和企业人才定制服务等教育场景下的各类教育服务产品</p>
+            
+            <div class="product-slider">
+                <div class="product-slide active">
+                    <div class="product-image">
+                        <img src="/template/1/cgsk/img/zhihuipingjiao.jpg" alt="蓝鲸先生智慧教评系统">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">蓝鲸先生智慧教评系统</h3>
+                        <div class="product-features">
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">基于AI的课堂教学行为分析</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">实时教学质量评估与反馈</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">个性化教师发展建议</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">多维度教学数据分析报告</span>
+                            </div>
+                        </div>
+                        <div class="product-buttons">
+                            <a href="product-detail.html" class="btn">产品详情 <i class="fas fa-arrow-right"></i></a>
+                            <button class="btn btn-video" data-video="video/product1.mp4">
+                                <i class="fas fa-play-circle"></i> 观看演示
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-slide">
+                    <div class="product-image">
+                        <img src="/template/1/cgsk/images/img2.png" alt="蓝鲸先生智慧教评系统">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">海浪智学数字课程平台</h3>
+                        <div class="product-features">
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">丰富的课程资源库</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">智能化学习路径推荐</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">互动式学习体验</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">包含：学习导航、指尖实验室、蓝鲸AI学伴、教师工作台、院系驾驶舱</span>
+                            </div>
+                        </div>
+                        <div class="product-buttons">
+                            <a href="product-detail-2.html" class="btn">产品详情 <i class="fas fa-arrow-right"></i></a>
+                            <button class="btn btn-video" data-video="video/product2.mp4">
+                                <i class="fas fa-play-circle"></i> 观看演示
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-slide">
+                    <div class="product-image">
+                        <img src="/template/1/cgsk/img/zhihuipingjiao.jpg" alt="实训平台">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">实训平台</h3>
+                        <div class="product-features">
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">虚拟仿真实验环境</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">真实产业项目案例</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">技能评估与认证</span>
+                            </div>
+                            <div class="product-feature">
+                                <i class="fas fa-check-circle feature-icon"></i>
+                                <span class="feature-text">就业对接服务</span>
+                            </div>
+                        </div>
+                        <div class="product-buttons">
+                            <a href="#contact" class="btn">产品详情 <i class="fas fa-arrow-right"></i></a>
+                            <button class="btn btn-video" data-video="video/product3.mp4">
+                                <i class="fas fa-play-circle"></i> 观看演示
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-dots">
+                    <div class="product-dot active" data-index="0"></div>
+                    <div class="product-dot" data-index="1"></div>
+                    <div class="product-dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴 -->
+    <section class="section partners" id="partners">
+        <div class="container">
+            <h2 class="section-title">合作伙伴</h2>
+            <p class="section-desc">我们与众多知名企业和教育机构建立了长期稳定的合作关系</p>
+            
+            <div class="partner-slider">
+                <div class="partner-track">
+                    <div class="partner-logo">
+                        <img src="/template/1/cgsk/img/guojiadianwang.png" alt="合作伙伴1">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="/template/1/cgsk/img/guangyumingdao.png" alt="合作伙伴2">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="/template/1/cgsk/img/cqie.png" alt="合作伙伴3">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="/template/1/cgsk/img/jinbaobao.png" alt="合作伙伴4">
+                    </div>
+                    <!-- 重复一遍实现无缝滚动 -->
+                    <div class="partner-logo">
+                        <img src="/template/1/cgsk/img/guojiadianwang.png" alt="合作伙伴1">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="/template/1/cgsk/img/guangyumingdao.png" alt="合作伙伴2">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="/template/1/cgsk/img/cqie.png" alt="合作伙伴3">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="/template/1/cgsk/img/jinbaobao.png" alt="合作伙伴4">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 公司简介 -->
+    <section class="company-intro" id="about">
+        <div class="container">
+            <h2 class="section-title">关于我们</h2>
+            <p class="section-desc">重工数科设立于2023年9月，公司致力于人工智能技术在教育场景的深度应用，是专注于国内高等职业教育的数字课程教育服务商</p>
+            
+            <div class="company-profile">
+                <div class="company-image">
+                    <img src="/template/1/cgsk/img/gomgsijianjie.jpg" alt="重工数科公司形象" onerror="this.style.display='none'">
+                    <span style="display: none;">重庆工院数字科技有限公司</span>
+                </div>
+                <div class="company-text-box">
+                    <h3 class="company-name">重庆工院数字科技有限公司</h3>
+                    <p class="company-description">
+                        重工数科设立于2023年9月，公司致力于人工智能技术在教育场景的深度应用，是专注于国内高等职业教育的数字课程教育服务商。
+                    </p>
+                    <p>公司自主研发覆盖职业教育数字课程建课服务、教学运营服务、教学评价及人工智能
+                        跟踪监测服务、电子实训实验室建设、产教融合和企业人才定制服务等教育场景下
+                        的各类教育服务产品。公司致力于在高等职业教育教学服务领域提供整体解决方案。
+                    </p>
+                    <button class="more"><a href="about.html">查看详情 <i class="fas fa-arrow-right"></i></a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新闻资讯 -->
+    <section class="section news-section" id="news">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">最新动态</h2>
+            </div>
+            
+            <div class="news-content">
+                <!-- 左侧新闻大图 -->
+                <a href="news-detail.html" class="news-main">
+                    <div class="news-image">
+                        <img src="https://picsum.photos/600/400" alt="新闻专题图片">
+                    </div>
+                    <div class="news-main-content">
+                        <div class="news-date">
+                            <div class="year">2025年</div>
+                            <div class="day">2月21日</div>
+                        </div>
+                        <h3 class="news-title">巴南区副区长杨昆一行莅临我司考察调研</h3>
+                        <p class="news-desc">近日，巴南区委领导考察调研重工数科，肯定其发展成果，赞许其前瞻性，重工数科将借此深化与政府合作，打造技术人才培养高地。</p>
+                    </div>
+                </a>
+                <!-- more -->
+                <div class="more-news-btn">
+                    <a href="news.html">更多资讯 <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- 右侧新闻列表 -->
+                <div class="news-list">
+                    <a href="#" class="news-item">
+                        <div class="news-item-date">
+                            <div class="year">2024年</div>
+                            <div class="day">12月18日</div>
+                        </div>
+                        <div class="news-item-content">
+                            <h4 class="news-item-title">我司代表出席工程学院专升本教学专题会</h4>
+                            <p class="news-item-desc">11月20日重庆工程学院专升本教学工作专题会上，重工数科代表汇报教学课程平台试点实施情况，下阶段将优化平台并引入更多优质课程，新功能预计下半年上线。</p>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="news-item">
+                        <div class="news-item-date">
+                            <div class="year">2024年</div>
+                            <div class="day">12月9日</div>
+                        </div>
+                        <div class="news-item-content">
+                            <h4 class="news-item-title">我司代表出席工程学院专升本教学专题会</h4>
+                            <p class="news-item-desc">11月20日重庆工程学院专升本教学工作专题会上，重工数科代表汇报教学课程平台试点实施情况，下阶段将优化平台并引入更多优质课程，新功能预计下半年上线。</p>
+                        </div>
+                    </a>
+                    
+                    <a href="#" class="news-item">
+                        <div class="news-item-date">
+                            <div class="year">2024年</div>
+                            <div class="day">11月4日</div>
+                        </div>
+                        <div class="news-item-content">
+                            <h4 class="news-item-title">我司代表出席应用型人才培养体系建设推进会</h4>
+                            <p class="news-item-desc">10月25日重庆工程学院应用型人才培养体系建设推进会上，重工数科代表介绍教学课程平台情况，会议深化共识，重工数科将配合各学科领域推进教学改革并开展线上线下混合式教学服务。</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/template/1/cgsk/img/gongsiLOGO.png" alt="重工数科LOGO">
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>重庆市巴南区重庆工程学院</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>400-888-8888</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@cgitech.com</span>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>首页</h3>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>产品展示</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link-item">
+                            <a href="product-detail.html" class="footer-link">蓝鲸先生智慧教评系统</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="product-detail-2.html" class="footer-link">海浪智学数字课程平台</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="products.html" class="footer-link">实训平台</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="products.html#yiwu-card" class="footer-link">重工易物</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="products.html#university-card" class="footer-link">我的大学</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>新闻资讯</h3>
+                </div>
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link-item">
+                            <a href="about.html#company-intro" class="footer-link">公司简介</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="about.html#company-culture" class="footer-link">企业文化</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="about.html#team-intro" class="footer-link">团队介绍</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="about.html#office-environment" class="footer-link">办公环境</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="about.html#intellectual-property" class="footer-link">知识产权</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                
+                <!-- <div class="footer-column">
+                    <h3>快速链接</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link-item">
+                            <a href="#home" class="footer-link">首页</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#about" class="footer-link">关于我们</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#services" class="footer-link">特色业务</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#news" class="footer-link">新闻资讯</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>产品展示</h3>
+                    <ul class="footer-links">
+                        <li class="footer-link-item">
+                            <a href="#products" class="footer-link">蓝鲸先生智慧教评系统</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#products" class="footer-link">海浪智学数字课程平台</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#products" class="footer-link">实训平台</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#products" class="footer-link">重工易物</a>
+                        </li>
+                        <li class="footer-link-item">
+                            <a href="#products" class="footer-link">我的大学</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>新闻资讯</h3>
+                    <div class="footer-news-item">
+                        <a href="#news" class="footer-news-title">巴西区副区长杨昆一行莅临我司考察调研</a>
+                        <div class="footer-news-date">2025年4月21日</div>
+                    </div>
+                    <div class="footer-news-item">
+                        <a href="#news" class="footer-news-title">我司代表出席工程学院专升本教学专题会</a>
+                        <div class="footer-news-date">2024年12月18日</div>
+                    </div>
+                    <div class="footer-news-item">
+                        <a href="#news" class="footer-news-title">重工数科产品全面接入DeepSeek</a>
+                        <div class="footer-news-date">2024年9月15日</div>
+                    </div>
+                </div> -->
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023-2025 重庆工院数字科技有限公司 版权所有 | 渝ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- 视频弹出层 -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <span class="video-close">&times;</span>
+            <div class="video-player">
+                <video id="modalVideo" controls>
+                    <source src="" type="video/mp4">
+                    您的浏览器不支持HTML5视频
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <script src="/template/1/cgsk/js/index.js"></script>
+</body>
+</html>
