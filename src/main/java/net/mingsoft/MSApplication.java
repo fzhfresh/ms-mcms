@@ -27,7 +27,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 
 @SpringBootApplication(scanBasePackages = {"net.mingsoft"})
-@MapperScan(basePackages={"**.dao","com.baomidou.**.mapper"})
+@MapperScan(basePackages={"**.dao","**.mapper"})
 @ServletComponentScan(basePackages = {"net.mingsoft"})
 public class MSApplication {
 	public static void main(String[] args) {
