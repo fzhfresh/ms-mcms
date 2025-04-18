@@ -117,3 +117,207 @@ java.lang.IllegalStateException: getOutputStream() has already been called for t
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
 	at java.lang.Thread.run(Thread.java:1570) [?:?]
 
+[2m2025-04-18 14:34:25.149[0;39m [[31mERROR[0;39m] [35m14260[0;39m [2m[io-8080-exec-10 ][0;39m [31mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:360 [2m:[0;39m Failed to parse multipart servlet request; nested exception is org.apache.commons.fileupload.FileUploadException: Stream closed
+[2m2025-04-18 14:34:25.181[0;39m [[31mERROR[0;39m] [35m14260[0;39m [2m[io-8080-exec-10 ][0;39m [31morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet][0;39m:175 [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.io.IOException: Stream closed
+	at org.apache.catalina.connector.InputBuffer.throwIfClosed(InputBuffer.java:536) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.InputBuffer.read(InputBuffer.java:347) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.CoyoteInputStream.read(CoyoteInputStream.java:132) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at java.io.FilterInputStream.read(FilterInputStream.java:119) ~[?:?]
+	at org.apache.commons.fileupload.util.LimitedInputStream.read(LimitedInputStream.java:132) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream$ItemInputStream.makeAvailable(MultipartStream.java:1027) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream$ItemInputStream.read(MultipartStream.java:931) ~[commons-fileupload-1.5.jar:1.5]
+	at java.io.InputStream.read(InputStream.java:220) ~[?:?]
+	at org.apache.commons.fileupload.util.Streams.copy(Streams.java:98) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.util.Streams.copy(Streams.java:68) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream.readBodyData(MultipartStream.java:622) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream.discardBodyData(MultipartStream.java:646) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream.skipPreamble(MultipartStream.java:664) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.findNextItem(FileUploadBase.java:1067) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.<init>(FileUploadBase.java:1047) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:334) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:358) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.servlet.ServletFileUpload.parseRequest(ServletFileUpload.java:113) ~[commons-fileupload-1.5.jar:1.5]
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:192) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:176) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1210) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1044) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:427) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:237) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:166) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+
+[2m2025-04-18 14:34:25.186[0;39m [[31mERROR[0;39m] [35m14260[0;39m [2m[io-8080-exec-10 ][0;39m [31morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost][0;39m:175 [2m:[0;39m Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is org.apache.commons.fileupload.FileUploadException: Stream closed
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:427) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:237) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:166) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+Caused by: org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is org.apache.commons.fileupload.FileUploadException: Stream closed
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:202) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:176) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1210) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1044) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	... 35 more
+Caused by: org.apache.commons.fileupload.FileUploadException: Stream closed
+	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:391) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.servlet.ServletFileUpload.parseRequest(ServletFileUpload.java:113) ~[commons-fileupload-1.5.jar:1.5]
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:192) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:176) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1210) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1044) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	... 35 more
+Caused by: java.io.IOException: Stream closed
+	at org.apache.catalina.connector.InputBuffer.throwIfClosed(InputBuffer.java:536) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.InputBuffer.read(InputBuffer.java:347) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.CoyoteInputStream.read(CoyoteInputStream.java:132) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at java.io.FilterInputStream.read(FilterInputStream.java:119) ~[?:?]
+	at org.apache.commons.fileupload.util.LimitedInputStream.read(LimitedInputStream.java:132) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream$ItemInputStream.makeAvailable(MultipartStream.java:1027) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream$ItemInputStream.read(MultipartStream.java:931) ~[commons-fileupload-1.5.jar:1.5]
+	at java.io.InputStream.read(InputStream.java:220) ~[?:?]
+	at org.apache.commons.fileupload.util.Streams.copy(Streams.java:98) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.util.Streams.copy(Streams.java:68) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream.readBodyData(MultipartStream.java:622) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream.discardBodyData(MultipartStream.java:646) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.MultipartStream.skipPreamble(MultipartStream.java:664) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.findNextItem(FileUploadBase.java:1067) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.<init>(FileUploadBase.java:1047) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:334) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:358) ~[commons-fileupload-1.5.jar:1.5]
+	at org.apache.commons.fileupload.servlet.ServletFileUpload.parseRequest(ServletFileUpload.java:113) ~[commons-fileupload-1.5.jar:1.5]
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:192) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:176) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1210) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1044) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	... 35 more
+
+[2m2025-04-18 14:36:55.523[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:585 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2m2025-04-18 14:36:55.565[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:666 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2m2025-04-18 14:36:55.565[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:585 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2m2025-04-18 14:36:55.565[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:740 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2m2025-04-18 14:36:55.593[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[ionShutdownHook ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:2212 [2m:[0;39m {dataSource-1} closing ...
+[2m2025-04-18 14:36:55.604[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[ionShutdownHook ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:2285 [2m:[0;39m {dataSource-1} closed
+[2m2025-04-18 14:37:00.975[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:55 [2m:[0;39m Starting MSApplication using Java 22.0.1 on Hehj with PID 24364 (D:\javacode\SK-Website\target\classes started by 86182 in D:\javacode\SK-Website)
+[2m2025-04-18 14:37:00.984[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:638 [2m:[0;39m The following 1 profile is active: "dev"
+[2m2025-04-18 14:37:04.106[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m:66 [2m:[0;39m Init DruidDataSource
+[2m2025-04-18 14:37:04.469[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:1007 [2m:[0;39m {dataSource-1} inited
+[2m2025-04-18 14:37:04.801[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IManagerDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:05.072[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IModelDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:05.131[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.metadata.TableInfoHelper[0;39m:347 [2m:[0;39m Can not find table primary key in Class: "net.mingsoft.basic.entity.RoleModelEntity".
+[2m2025-04-18 14:37:05.132[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.DefaultSqlInjector[0;39m:56 [2m:[0;39m class net.mingsoft.basic.entity.RoleModelEntity ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[2m2025-04-18 14:37:05.895[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.AprLifecycleListener[0;39m:173 [2m:[0;39m Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+[2m2025-04-18 14:37:05.896[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.AprLifecycleListener[0;39m:173 [2m:[0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+[2m2025-04-18 14:37:05.896[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.AprLifecycleListener[0;39m:173 [2m:[0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+[2m2025-04-18 14:37:05.914[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.AprLifecycleListener[0;39m:173 [2m:[0;39m OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+[2m2025-04-18 14:37:05.922[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.coyote.http11.Http11NioProtocol[0;39m:173 [2m:[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+[2m2025-04-18 14:37:05.924[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.StandardService[0;39m:173 [2m:[0;39m Starting service [Tomcat]
+[2m2025-04-18 14:37:05.924[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.StandardEngine[0;39m:173 [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.83]
+[2m2025-04-18 14:37:06.107[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m:173 [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2025-04-18 14:37:06.506[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.ICategoryDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:06.566[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.IContentDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:06.840[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IModelDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:07.087[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.ITagDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:07.533[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.ICmsHistoryLogDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:08.108[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.ILogDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:08.342[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IRoleDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:08.570[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.ICityDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:09.419[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IDictDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:09.781[0;39m [[33m WARN[0;39m] [35m24364[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IPageDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-18 14:37:12.069[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1220 [2m:[0;39m Using default implementation for ThreadExecutor
+[2m2025-04-18 14:37:12.084[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.core.SchedulerSignalerImpl[0;39m:61 [2m:[0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2m2025-04-18 14:37:12.084[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:229 [2m:[0;39m Quartz Scheduler v.2.3.2 created.
+[2m2025-04-18 14:37:12.085[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.simpl.RAMJobStore[0;39m:155 [2m:[0;39m RAMJobStore initialized.
+[2m2025-04-18 14:37:12.086[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:294 [2m:[0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[2m2025-04-18 14:37:12.086[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1374 [2m:[0;39m Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2m2025-04-18 14:37:12.086[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1378 [2m:[0;39m Quartz scheduler version: 2.3.2
+[2m2025-04-18 14:37:12.087[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:2293 [2m:[0;39m JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6a4c4261
+[2m2025-04-18 14:37:12.253[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.apache.coyote.http11.Http11NioProtocol[0;39m:173 [2m:[0;39m Starting ProtocolHandler ["http-nio-8080"]
+[2m2025-04-18 14:37:12.273[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:547 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2m2025-04-18 14:37:12.281[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:61 [2m:[0;39m Started MSApplication in 11.847 seconds (JVM running for 12.715)
+[2m2025-04-18 14:37:42.532[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:585 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2m2025-04-18 14:37:42.551[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:666 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2m2025-04-18 14:37:42.551[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:585 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2m2025-04-18 14:37:42.551[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:740 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2m2025-04-18 14:37:42.581[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[ionShutdownHook ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:2212 [2m:[0;39m {dataSource-1} closing ...
+[2m2025-04-18 14:37:42.589[0;39m [[32m INFO[0;39m] [35m24364[0;39m [2m[ionShutdownHook ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:2285 [2m:[0;39m {dataSource-1} closed
