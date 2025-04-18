@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频管理系统</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #444;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="file"],
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="file"] {
+            padding: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .status {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .success {
+            background-color: #dff0d8;
+            color: #3c763d;
+            display: block;
+        }
+
+        .error {
+            background-color: #f2dede;
+            color: #a94442;
+            display: block;
+        }
+
+        .video-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .video-table th,
+        .video-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .video-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+
+        .video-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .video-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        .play-btn {
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .play-btn:hover {
+            background-color: #286090;
+        }
+
+        .video-player {
+            width: 100%;
+            margin-top: 20px;
+            display: none;
+        }
+
+        video {
+            width: 100%;
+            max-height: 500px;
+            background-color: #000;
+        }
+
+        .player-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .close-player {
+            float: right;
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .close-player:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>视频管理系统</h1>
+
+    <div class="section">
+        <h2 class="section-title">上传视频</h2>
+        <form class="upload-form" id="uploadForm">
+            <div class="form-group">
+                <label for="videoFile">选择视频文件 (MP4格式):</label>
+                <input type="file" id="videoFile" name="file" accept="video/mp4" required>
+            </div>
+
+            <div class="form-group">
+                <label for="savePath">保存路径 (服务器路径):</label>
+                <input type="text" id="savePath" name="SavePath" placeholder="例如: D:/videos" required>
+            </div>
+
+            <button type="submit">上传视频</button>
+
+            <div id="uploadStatus" class="status"></div>
+        </form>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">视频列表</h2>
+        <table class="video-table" id="videoTable">
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>视频名称</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody id="videoTableBody">
+            <!-- 视频列表将通过JavaScript动态加载 -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section" id="videoPlayerSection" style="display: none;">
+        <div class="player-title">
+            <span id="playerTitle"></span>
+            <button class="close-player" id="closePlayer">关闭播放器</button>
+        </div>
+        <div class="video-player">
+            <video controls id="videoPlayer">
+                您的浏览器不支持HTML5视频标签。
+            </video>
+        </div>
+    </div>
+</div>
+
+<script>
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取DOM元素
+        const uploadForm = document.getElementById('uploadForm');
+        const uploadStatus = document.getElementById('uploadStatus');
+        const videoTableBody = document.getElementById('videoTableBody');
+        const videoPlayerSection = document.getElementById('videoPlayerSection');
+        const videoPlayer = document.getElementById('videoPlayer');
+        const playerTitle = document.getElementById('playerTitle');
+        const closePlayer = document.getElementById('closePlayer');
+
+        // 加载视频列表
+        loadVideoList();
+
+        // 上传表单提交事件
+        uploadForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData();
+            const videoFile = document.getElementById('videoFile').files[0];
+            const savePath = document.getElementById('savePath').value;
+
+            formData.append('file', videoFile);
+            formData.append('SavePath', savePath);
+
+            // 显示上传中状态
+            uploadStatus.textContent = '上传中...';
+            uploadStatus.className = 'status';
+            uploadStatus.style.display = 'block';
+
+            // 发送上传请求
+            fetch('http://localhost:8080/api/uploadVideo3', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.resCode === '200') {
+                        uploadStatus.textContent = '上传成功! 视频已保存到: ' + data.VideoUrl;
+                        uploadStatus.className = 'status success';
+
+                        // 清空表单
+                        uploadForm.reset();
+
+                        // 重新加载视频列表
+                        loadVideoList();
+                    } else {
+                        uploadStatus.textContent = '上传失败: ' + (data.message || '未知错误');
+                        uploadStatus.className = 'status error';
+                    }
+                })
+                .catch(error => {
+                    uploadStatus.textContent = '上传出错: ' + error.message;
+                    uploadStatus.className = 'status error';
+                    console.error('上传错误:', error);
+                });
+        });
+
+        // 加载视频列表
+        function loadVideoList() {
+            fetch('http://localhost:8080/SelectVideo/table')
+                .then(response => response.json())
+                .then(videos => {
+                    videoTableBody.innerHTML = '';
+
+                    if (videos.length === 0) {
+                        videoTableBody.innerHTML = '<tr><td colspan="3" style="text-align: center;">暂无视频</td></tr>';
+                        return;
+                    }
+
+                    videos.forEach(video => {
+                        const row = document.createElement('tr');
+
+                        const idCell = document.createElement('td');
+                        idCell.textContent = video.id;
+
+                        const nameCell = document.createElement('td');
+                        nameCell.textContent = video.videoName;
+
+                        const actionCell = document.createElement('td');
+                        const playButton = document.createElement('button');
+                        playButton.className = 'play-btn';
+                        playButton.textContent = '播放';
+                        playButton.addEventListener('click', function() {
+                            playVideo(video.id, video.videoName);
+                        });
+
+                        actionCell.appendChild(playButton);
+
+                        row.appendChild(idCell);
+                        row.appendChild(nameCell);
+                        row.appendChild(actionCell);
+
+                        videoTableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error('加载视频列表出错:', error);
+                    videoTableBody.innerHTML = '<tr><td colspan="3" style="text-align: center;">加载视频列表失败</td></tr>';
+                });
+        }
+
+        // 播放视频
+        function playVideo(videoId, videoName) {
+            playerTitle.textContent = '正在播放: ' + videoName;
+            videoPlayerSection.style.display = 'block';
+
+            // 设置视频源
+            videoPlayer.src = `http://localhost:8080/SelectVideo/policemen/${videoId}`;
+            videoPlayer.load();
+            videoPlayer.play();
+
+            // 滚动到播放器位置
+            videoPlayerSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // 关闭播放器
+        closePlayer.addEventListener('click', function() {
+            videoPlayer.pause();
+            videoPlayerSection.style.display = 'none';
+        });
+    });
+</script>
+</body>
+</html>
