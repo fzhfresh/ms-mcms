@@ -44,3 +44,118 @@
 [2m2025-04-18 13:59:51.303[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[           main ][0;39m [32morg.apache.coyote.http11.Http11NioProtocol[0;39m:173 [2m:[0;39m Starting ProtocolHandler ["http-nio-8080"]
 [2m2025-04-18 13:59:51.323[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:547 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
 [2m2025-04-18 13:59:51.330[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:61 [2m:[0;39m Started MSApplication in 14.841 seconds (JVM running for 15.957)
+[2m2025-04-18 14:00:48.011[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m:173 [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2025-04-18 14:00:48.031[0;39m [[32m INFO[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32morg.apache.shiro.session.mgt.AbstractValidatingSessionManager[0;39m:233 [2m:[0;39m Enabling session validation scheduler...
+[2m2025-04-18 14:00:48.087[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:00:48.131[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload where id = ?
+[2m2025-04-18 14:00:48.384[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==> Parameters: 1(Integer)
+[2m2025-04-18 14:00:48.430[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-18 14:00:48.475[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:122 [2m:[0;39m handleException
+[2m2025-04-18 14:00:48.475[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:353 [2m:[0;39m url: /SelectVideo/policemen/1
+[2m2025-04-18 14:00:48.478[0;39m [[31mERROR[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [31mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:360 [2m:[0;39m java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+[2m2025-04-18 14:00:48.517[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:00:48.518[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload where id = ?
+[2m2025-04-18 14:00:48.519[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==> Parameters: 1(Integer)
+[2m2025-04-18 14:00:48.520[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-18 14:00:48.546[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:00:48.549[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload where id = ?
+[2m2025-04-18 14:00:48.549[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==> Parameters: 1(Integer)
+[2m2025-04-18 14:00:48.550[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-18 14:00:48.550[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:122 [2m:[0;39m handleException
+[2m2025-04-18 14:00:48.551[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:353 [2m:[0;39m url: /SelectVideo/policemen/1
+[2m2025-04-18 14:00:48.552[0;39m [[31mERROR[0;39m] [35m14260[0;39m [2m[nio-8080-exec-4 ][0;39m [31mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:360 [2m:[0;39m java.io.IOException: 你的主机中的软件中止了一个已建立的连接。
+[2m2025-04-18 14:00:48.630[0;39m [[31mERROR[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [31morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet][0;39m:175 [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:572) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:189) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:117) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:391) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:304) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:255) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:181) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:316) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1406) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1150) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.31.jar:5.3.31]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:154) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:458) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:373) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:387) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:370) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:154) ~[shiro-all-1.13.0.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at net.mingsoft.basic.filter.XSSEscapeFilter.doFilter(XSSEscapeFilter.java:63) ~[ms-basic-2.2.8.jar:2.2.8]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:481) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
+	at java.lang.Thread.run(Thread.java:1570) [?:?]
+
+[2m2025-04-18 14:00:48.917[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:00:48.919[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload where id = ?
+[2m2025-04-18 14:00:48.919[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==> Parameters: 1(Integer)
+[2m2025-04-18 14:00:48.922[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-18 14:01:11.749[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:01:11.752[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload where id = ?
+[2m2025-04-18 14:01:11.752[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==> Parameters: 1(Integer)
+[2m2025-04-18 14:01:11.754[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-18 14:01:17.009[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:01:17.014[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoAll[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload
+[2m2025-04-18 14:01:17.017[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoAll[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-18 14:01:17.022[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoAll[0;39m:135 [2m:[0;39m <==      Total: 2
+[2m2025-04-18 14:03:58.495[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:03:58.503[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:73 [2m:[0;39m error status 404 NOT_FOUND, error {timestamp=2025-04-18T14:03:58.503+0800, status=404, error=Not Found, path=/SelectVideo/policemen},url /error
+[2m2025-04-18 14:06:26.306[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:06:26.313[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:73 [2m:[0;39m error status 404 NOT_FOUND, error {timestamp=2025-04-18T14:06:26.313+0800, status=404, error=Not Found, path=/SelectVideo/policemen},url /error
+[2m2025-04-18 14:07:16.473[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:07:16.475[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload where id = ?
+[2m2025-04-18 14:07:16.476[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==> Parameters: 1(Integer)
+[2m2025-04-18 14:07:16.486[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-18 14:07:32.831[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-18 14:07:32.833[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload where id = ?
+[2m2025-04-18 14:07:32.833[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==> Parameters: 1(Integer)
+[2m2025-04-18 14:07:32.834[0;39m [[32mDEBUG[0;39m] [35m14260[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m <==      Total: 1
