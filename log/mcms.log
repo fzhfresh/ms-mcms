@@ -1,36 +1,32 @@
-[2m2025-04-18 14:37:47.070[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:55 [2m:[0;39m Starting MSApplication using Java 22.0.1 on Hehj with PID 14672 (D:\javacode\SK-Website\target\classes started by 86182 in D:\javacode\SK-Website)
-[2m2025-04-18 14:37:47.083[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:56 [2m:[0;39m Running with Spring Boot v2.7.18, Spring v5.3.31
-[2m2025-04-18 14:37:47.085[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:638 [2m:[0;39m The following 1 profile is active: "dev"
-[2m2025-04-18 14:37:50.169[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m:66 [2m:[0;39m Init DruidDataSource
-[2m2025-04-18 14:37:50.494[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:1007 [2m:[0;39m {dataSource-1} inited
-[2m2025-04-18 14:37:50.798[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IManagerDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:51.068[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IModelDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:51.105[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.metadata.TableInfoHelper[0;39m:347 [2m:[0;39m Can not find table primary key in Class: "net.mingsoft.basic.entity.RoleModelEntity".
-[2m2025-04-18 14:37:51.105[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.DefaultSqlInjector[0;39m:56 [2m:[0;39m class net.mingsoft.basic.entity.RoleModelEntity ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
-[2m2025-04-18 14:37:51.784[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.AprLifecycleListener[0;39m:173 [2m:[0;39m Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
-[2m2025-04-18 14:37:51.784[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.AprLifecycleListener[0;39m:173 [2m:[0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
-[2m2025-04-18 14:37:51.785[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.AprLifecycleListener[0;39m:173 [2m:[0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
-[2m2025-04-18 14:37:51.789[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.AprLifecycleListener[0;39m:173 [2m:[0;39m OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
-[2m2025-04-18 14:37:51.796[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.coyote.http11.Http11NioProtocol[0;39m:173 [2m:[0;39m Initializing ProtocolHandler ["http-nio-8080"]
-[2m2025-04-18 14:37:51.798[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.StandardService[0;39m:173 [2m:[0;39m Starting service [Tomcat]
-[2m2025-04-18 14:37:51.798[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.StandardEngine[0;39m:173 [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.83]
-[2m2025-04-18 14:37:51.968[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m:173 [2m:[0;39m Initializing Spring embedded WebApplicationContext
-[2m2025-04-18 14:37:52.073[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32mnet.mingsoft.basic.filter.XSSEscapeFilter[0;39m:140 [2m:[0;39m xss filter init
-[2m2025-04-18 14:37:52.441[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.ICategoryDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:52.485[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.IContentDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:52.732[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IModelDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:52.972[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.ITagDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:53.446[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.ICmsHistoryLogDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:54.076[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.ILogDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:54.270[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IRoleDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:54.509[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.ICityDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:55.365[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IDictDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:55.636[0;39m [[33m WARN[0;39m] [35m14672[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IPageDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
-[2m2025-04-18 14:37:57.900[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1220 [2m:[0;39m Using default implementation for ThreadExecutor
-[2m2025-04-18 14:37:57.919[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.core.SchedulerSignalerImpl[0;39m:61 [2m:[0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-[2m2025-04-18 14:37:57.919[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:229 [2m:[0;39m Quartz Scheduler v.2.3.2 created.
-[2m2025-04-18 14:37:57.920[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.simpl.RAMJobStore[0;39m:155 [2m:[0;39m RAMJobStore initialized.
-[2m2025-04-18 14:37:57.921[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:294 [2m:[0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+[2m2025-04-21 18:31:45.640[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:55 [2m:[0;39m Starting MSApplication using Java 22.0.1 on Fresh with PID 3676 (F:\Github\sk-website\target\classes started by 樊镇豪A in F:\Github\sk-website)
+[2m2025-04-21 18:31:45.648[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:56 [2m:[0;39m Running with Spring Boot v2.7.18, Spring v5.3.31
+[2m2025-04-21 18:31:45.649[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:638 [2m:[0;39m The following 1 profile is active: "dev"
+[2m2025-04-21 18:31:48.888[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32mcom.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure[0;39m:66 [2m:[0;39m Init DruidDataSource
+[2m2025-04-21 18:31:49.200[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:1007 [2m:[0;39m {dataSource-1} inited
+[2m2025-04-21 18:31:49.474[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IManagerDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:49.711[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IModelDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:49.752[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.metadata.TableInfoHelper[0;39m:347 [2m:[0;39m Can not find table primary key in Class: "net.mingsoft.basic.entity.RoleModelEntity".
+[2m2025-04-21 18:31:49.752[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.DefaultSqlInjector[0;39m:56 [2m:[0;39m class net.mingsoft.basic.entity.RoleModelEntity ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+[2m2025-04-21 18:31:50.453[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.apache.coyote.http11.Http11NioProtocol[0;39m:173 [2m:[0;39m Initializing ProtocolHandler ["http-nio-8080"]
+[2m2025-04-21 18:31:50.454[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.StandardService[0;39m:173 [2m:[0;39m Starting service [Tomcat]
+[2m2025-04-21 18:31:50.456[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.StandardEngine[0;39m:173 [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.83]
+[2m2025-04-21 18:31:50.675[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m:173 [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2025-04-21 18:31:50.766[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32mnet.mingsoft.basic.filter.XSSEscapeFilter[0;39m:140 [2m:[0;39m xss filter init
+[2m2025-04-21 18:31:51.005[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.ICategoryDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:51.057[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.IContentDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:51.293[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IModelDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:51.715[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.ITagDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:52.155[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.cms.dao.ICmsHistoryLogDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:52.714[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.ILogDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:52.884[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.IRoleDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:53.071[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.basic.dao.ICityDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:53.756[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IDictDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:53.973[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[           main ][0;39m [33mcom.baomidou.mybatisplus.core.injector.AbstractMethod[0;39m:405 [2m:[0;39m [net.mingsoft.mdiy.dao.IPageDao.delete] Has been loaded by XML or SqlProvider or Mybatis's Annotation, so ignoring this injection for [class com.baomidou.mybatisplus.core.injector.methods.Delete]
+[2m2025-04-21 18:31:55.876[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1220 [2m:[0;39m Using default implementation for ThreadExecutor
+[2m2025-04-21 18:31:55.887[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.core.SchedulerSignalerImpl[0;39m:61 [2m:[0;39m Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[2m2025-04-21 18:31:55.888[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:229 [2m:[0;39m Quartz Scheduler v.2.3.2 created.
+[2m2025-04-21 18:31:55.889[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.simpl.RAMJobStore[0;39m:155 [2m:[0;39m RAMJobStore initialized.
+[2m2025-04-21 18:31:55.889[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:294 [2m:[0;39m Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -38,166 +34,207 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-[2m2025-04-18 14:37:57.921[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1374 [2m:[0;39m Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-[2m2025-04-18 14:37:57.921[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1378 [2m:[0;39m Quartz scheduler version: 2.3.2
-[2m2025-04-18 14:37:57.921[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:2293 [2m:[0;39m JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4587675c
-[2m2025-04-18 14:37:58.067[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.apache.coyote.http11.Http11NioProtocol[0;39m:173 [2m:[0;39m Starting ProtocolHandler ["http-nio-8080"]
-[2m2025-04-18 14:37:58.099[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:547 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
-[2m2025-04-18 14:37:58.109[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:61 [2m:[0;39m Started MSApplication in 11.586 seconds (JVM running for 12.365)
-[2m2025-04-18 14:39:24.273[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m:173 [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-[2m2025-04-18 14:39:24.309[0;39m [[32m INFO[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32morg.apache.shiro.session.mgt.AbstractValidatingSessionManager[0;39m:233 [2m:[0;39m Enabling session validation scheduler...
-[2m2025-04-18 14:39:26.357[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
-[2m2025-04-18 14:39:26.776[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.resolver.CustomMultipartResolver[0;39m:120 [2m:[0;39m Part 'file', size 5780780 bytes, filename='CCPC郑州2.JPG'
-[2m2025-04-18 14:39:26.810[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
-[2m2025-04-18 14:39:26.820[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.resolver.CustomMultipartResolver[0;39m:120 [2m:[0;39m Cleaning up part 'file', filename 'CCPC郑州2.JPG'
-[2m2025-04-18 14:39:26.833[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:122 [2m:[0;39m handleException
-[2m2025-04-18 14:39:26.834[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:353 [2m:[0;39m url: /error
-[2m2025-04-18 14:39:26.838[0;39m [[31mERROR[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [31mnet.mingsoft.basic.exception.GlobalExceptionResolver[0;39m:360 [2m:[0;39m Failed to parse multipart servlet request; nested exception is org.apache.commons.fileupload.FileUploadException: Stream closed
-[2m2025-04-18 14:39:26.885[0;39m [[32mDEBUG[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
-[2m2025-04-18 14:39:26.911[0;39m [[31mERROR[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [31morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet][0;39m:175 [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] threw exception
-
-java.io.IOException: Stream closed
-	at org.apache.catalina.connector.InputBuffer.throwIfClosed(InputBuffer.java:536) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.connector.InputBuffer.read(InputBuffer.java:347) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.connector.CoyoteInputStream.read(CoyoteInputStream.java:132) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at java.io.FilterInputStream.read(FilterInputStream.java:119) ~[?:?]
-	at org.apache.commons.fileupload.util.LimitedInputStream.read(LimitedInputStream.java:132) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream$ItemInputStream.makeAvailable(MultipartStream.java:1027) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream$ItemInputStream.read(MultipartStream.java:931) ~[commons-fileupload-1.5.jar:1.5]
-	at java.io.InputStream.read(InputStream.java:220) ~[?:?]
-	at org.apache.commons.fileupload.util.Streams.copy(Streams.java:98) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.util.Streams.copy(Streams.java:68) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream.readBodyData(MultipartStream.java:622) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream.discardBodyData(MultipartStream.java:646) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream.skipPreamble(MultipartStream.java:664) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.findNextItem(FileUploadBase.java:1067) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.<init>(FileUploadBase.java:1047) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:334) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:358) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.servlet.ServletFileUpload.parseRequest(ServletFileUpload.java:113) ~[commons-fileupload-1.5.jar:1.5]
-	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:192) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:176) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1210) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1044) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) ~[javax.servlet-api-4.0.1.jar:4.0.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[javax.servlet-api-4.0.1.jar:4.0.1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:427) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:237) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:166) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at java.lang.Thread.run(Thread.java:1570) [?:?]
-
-[2m2025-04-18 14:39:26.915[0;39m [[31mERROR[0;39m] [35m14672[0;39m [2m[nio-8080-exec-1 ][0;39m [31morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost][0;39m:175 [2m:[0;39m Exception Processing ErrorPage[errorCode=0, location=/error]
-
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is org.apache.commons.fileupload.FileUploadException: Stream closed
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) ~[javax.servlet-api-4.0.1.jar:4.0.1]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[javax.servlet-api-4.0.1.jar:4.0.1]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:209) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:178) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:153) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:661) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:427) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:357) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:294) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:377) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:237) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:166) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:928) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1794) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at java.lang.Thread.run(Thread.java:1570) [?:?]
-Caused by: org.springframework.web.multipart.MultipartException: Failed to parse multipart servlet request; nested exception is org.apache.commons.fileupload.FileUploadException: Stream closed
-	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:202) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:176) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1210) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1044) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	... 35 more
-Caused by: org.apache.commons.fileupload.FileUploadException: Stream closed
-	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:391) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.servlet.ServletFileUpload.parseRequest(ServletFileUpload.java:113) ~[commons-fileupload-1.5.jar:1.5]
-	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:192) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:176) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1210) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1044) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	... 35 more
-Caused by: java.io.IOException: Stream closed
-	at org.apache.catalina.connector.InputBuffer.throwIfClosed(InputBuffer.java:536) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.connector.InputBuffer.read(InputBuffer.java:347) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at org.apache.catalina.connector.CoyoteInputStream.read(CoyoteInputStream.java:132) ~[tomcat-embed-core-9.0.83.jar:9.0.83]
-	at java.io.FilterInputStream.read(FilterInputStream.java:119) ~[?:?]
-	at org.apache.commons.fileupload.util.LimitedInputStream.read(LimitedInputStream.java:132) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream$ItemInputStream.makeAvailable(MultipartStream.java:1027) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream$ItemInputStream.read(MultipartStream.java:931) ~[commons-fileupload-1.5.jar:1.5]
-	at java.io.InputStream.read(InputStream.java:220) ~[?:?]
-	at org.apache.commons.fileupload.util.Streams.copy(Streams.java:98) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.util.Streams.copy(Streams.java:68) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream.readBodyData(MultipartStream.java:622) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream.discardBodyData(MultipartStream.java:646) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.MultipartStream.skipPreamble(MultipartStream.java:664) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.findNextItem(FileUploadBase.java:1067) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.FileUploadBase$FileItemIteratorImpl.<init>(FileUploadBase.java:1047) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.FileUploadBase.getItemIterator(FileUploadBase.java:334) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.FileUploadBase.parseRequest(FileUploadBase.java:358) ~[commons-fileupload-1.5.jar:1.5]
-	at org.apache.commons.fileupload.servlet.ServletFileUpload.parseRequest(ServletFileUpload.java:113) ~[commons-fileupload-1.5.jar:1.5]
-	at org.springframework.web.multipart.commons.CommonsMultipartResolver.parseRequest(CommonsMultipartResolver.java:192) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.multipart.commons.CommonsMultipartResolver.resolveMultipart(CommonsMultipartResolver.java:176) ~[spring-web-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.checkMultipart(DispatcherServlet.java:1210) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1044) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.31.jar:5.3.31]
-	... 35 more
-
+[2m2025-04-21 18:31:55.890[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1374 [2m:[0;39m Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[2m2025-04-21 18:31:55.890[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.impl.StdSchedulerFactory[0;39m:1378 [2m:[0;39m Quartz scheduler version: 2.3.2
+[2m2025-04-21 18:31:55.890[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:2293 [2m:[0;39m JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2b592f17
+[2m2025-04-21 18:31:56.028[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.apache.coyote.http11.Http11NioProtocol[0;39m:173 [2m:[0;39m Starting ProtocolHandler ["http-nio-8080"]
+[2m2025-04-21 18:31:56.052[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:547 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[2m2025-04-21 18:31:56.058[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[           main ][0;39m [32mnet.mingsoft.MSApplication[0;39m:61 [2m:[0;39m Started MSApplication in 10.919 seconds (JVM running for 12.027)
+[2m2025-04-21 18:32:46.325[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m:173 [2m:[0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2m2025-04-21 18:32:46.338[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32morg.apache.shiro.session.mgt.AbstractValidatingSessionManager[0;39m:233 [2m:[0;39m Enabling session validation scheduler...
+[2m2025-04-21 18:32:46.394[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:46.465[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [33mcom.baomidou.mybatisplus.core.toolkit.support.ReflectLambdaMeta[0;39m:41 [2m:[0;39m Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @5acf93bb
+[2m2025-04-21 18:32:46.488[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.dao.IAppDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,app_state,app_name,app_description,app_logo,app_style,app_keyword,app_copyright,app_dir,app_url,app_urls,app_datetime,app_pay_date,app_pay,create_by,create_date,del,update_by,update_date FROM app WHERE (app_url = ?) ORDER BY id ASC
+[2m2025-04-21 18:32:46.712[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.dao.IAppDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: http://localhost:8080/(String)
+[2m2025-04-21 18:32:46.745[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.dao.IAppDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 18:32:46.749[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:47.358[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:32:47.358[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:32:47.374[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.dao.IAppDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IAppDao]: 0.0
+[2m2025-04-21 18:32:47.374[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.dao.IAppDao.query[0;39m:135 [2m:[0;39m ==>  Preparing: select * from app order by id asc
+[2m2025-04-21 18:32:47.376[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.dao.IAppDao.query[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:47.377[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.dao.IAppDao.query[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 18:32:51.665[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.action.web.LoginAction[0;39m:112 [2m:[0;39m basic checkLogin
+[2m2025-04-21 18:32:51.676[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.updateCache[0;39m:135 [2m:[0;39m ==>  Preparing: UPDATE manager set del=del where del < 0
+[2m2025-04-21 18:32:51.680[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.updateCache[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:51.687[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.updateCache[0;39m:135 [2m:[0;39m <==    Updates: 0
+[2m2025-04-21 18:32:51.690[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.0
+[2m2025-04-21 18:32:51.691[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.getByEntity[0;39m:135 [2m:[0;39m ==>  Preparing: select * from manager WHERE MANAGER_NAME=?
+[2m2025-04-21 18:32:51.692[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.getByEntity[0;39m:135 [2m:[0;39m ==> Parameters: msopen(String)
+[2m2025-04-21 18:32:51.693[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.getByEntity[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 18:32:51.701[0;39m [[33m WARN[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [33morg.apache.ibatis.io.SerialFilterChecker[0;39m:45 [2m:[0;39m As you are using functionality that deserializes object streams, it is recommended to define the JEP-290 serial filter. Please refer to https://docs.oracle.com/pls/topic/lookup?ctx=javase15&id=GUID-8296D8E8-2B93-4B9A-856E-0A65AF9B8C66
+[2m2025-04-21 18:32:51.702[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.5
+[2m2025-04-21 18:32:51.735[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IModelDao]: 0.0
+[2m2025-04-21 18:32:51.735[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.queryModelByRoleId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from model where id in (select MODEL_ID from role_model where ROLE_ID=?) order by MODEL_SORT desc,id desc
+[2m2025-04-21 18:32:51.738[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.queryModelByRoleId[0;39m:135 [2m:[0;39m ==> Parameters: 48(Integer)
+[2m2025-04-21 18:32:51.768[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.queryModelByRoleId[0;39m:135 [2m:[0;39m <==      Total: 88
+[2m2025-04-21 18:32:51.789[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:51.821[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.3333333333333333
+[2m2025-04-21 18:32:51.822[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.getByEntity[0;39m:135 [2m:[0;39m ==>  Preparing: select * from manager WHERE MANAGER_NAME=? and MANAGER_NICKNAME=? and MANAGER_PASSWORD=? and MANAGER_ADMIN=? and ROLE_IDS=?
+[2m2025-04-21 18:32:51.824[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.getByEntity[0;39m:135 [2m:[0;39m ==> Parameters: msopen(String), msopen(String), 9d8622060de5f24937b60585c3f4d66b(String), super(String), 48(String)
+[2m2025-04-21 18:32:51.827[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.getByEntity[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 18:32:51.832[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:51.833[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:51.844[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:52.054[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.5
+[2m2025-04-21 18:32:52.056[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:52.056[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:52.065[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:52.072[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.selectById[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,manager_name,MANAGER_NICKNAME,manager_password,manager_admin,role_ids,del,create_by,create_date,update_by,update_date FROM manager WHERE id=?
+[2m2025-04-21 18:32:52.074[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.selectById[0;39m:135 [2m:[0;39m ==> Parameters: 57(String)
+[2m2025-04-21 18:32:52.076[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.selectById[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 18:32:52.089[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:52.122[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-5 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:52.214[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:52.214[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:52.221[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:52.230[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:52.302[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.selectById[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,manager_name,MANAGER_NICKNAME,manager_password,manager_admin,role_ids,del,create_by,create_date,update_by,update_date FROM manager WHERE id=?
+[2m2025-04-21 18:32:52.302[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.selectById[0;39m:135 [2m:[0;39m ==> Parameters: 57(String)
+[2m2025-04-21 18:32:52.303[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao.selectById[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 18:32:59.622[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.6
+[2m2025-04-21 18:32:59.623[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.624[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.630[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.632[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.6666666666666666
+[2m2025-04-21 18:32:59.633[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.634[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.638[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.643[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.7142857142857143
+[2m2025-04-21 18:32:59.644[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.644[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.647[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.650[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.75
+[2m2025-04-21 18:32:59.651[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.651[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.654[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.656[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.7777777777777778
+[2m2025-04-21 18:32:59.657[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.658[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.660[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.662[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.8
+[2m2025-04-21 18:32:59.663[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.663[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.668[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.698[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.8181818181818182
+[2m2025-04-21 18:32:59.699[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.699[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.703[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.705[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.8333333333333334
+[2m2025-04-21 18:32:59.706[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.706[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.710[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.712[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.8461538461538461
+[2m2025-04-21 18:32:59.714[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.714[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.717[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.719[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.8571428571428571
+[2m2025-04-21 18:32:59.721[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.721[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.724[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.725[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.8666666666666667
+[2m2025-04-21 18:32:59.727[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.728[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.731[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.733[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.875
+[2m2025-04-21 18:32:59.734[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.734[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.737[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.739[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IManagerDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.basic.dao.IManagerDao]: 0.8823529411764706
+[2m2025-04-21 18:32:59.740[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,model_title,model_datetime,model_id,model_url,model_code,is_child,model_icon,model_sort,model_ismenu,model_parent_ids,app_id,create_by,create_date,del,update_by,update_date FROM model
+[2m2025-04-21 18:32:59.740[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: 
+[2m2025-04-21 18:32:59.743[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.dao.IModelDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 94
+[2m2025-04-21 18:32:59.832[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:32:59.833[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:32:59.833[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:32:59.893[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.cms.dao.ICategoryDao.selectList[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT id,category_title,category_short_title,category_pinyin,category_id,category_type,category_sort,category_list_url,category_url,category_keyword,category_descrip,category_img,category_ico,category_display,category_is_search,category_diy_url,mdiy_model_id,mdiy_category_model_id,dict_id,category_flag,category_path,category_parent_ids,leaf,top_id,is_child,create_by,create_date,del,update_by,update_date FROM cms_category WHERE is_child=? AND del=?
+[2m2025-04-21 18:32:59.896[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.cms.dao.ICategoryDao.selectList[0;39m:135 [2m:[0;39m ==> Parameters: cms(String), 0(Integer)
+[2m2025-04-21 18:32:59.906[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.cms.dao.ICategoryDao.selectList[0;39m:135 [2m:[0;39m <==      Total: 5
+[2m2025-04-21 18:32:59.912[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:59.914[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:59.915[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:59.915[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:59.915[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:349 [2m:[0;39m server:localhost,basePath:http://localhost:8080/
+[2m2025-04-21 18:32:59.946[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.mdiy.dao.IDictDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.mdiy.dao.IDictDao]: 0.0
+[2m2025-04-21 18:32:59.947[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.mdiy.dao.IDictDao.query_COUNT[0;39m:135 [2m:[0;39m ==>  Preparing: SELECT count(0) FROM mdiy_dict WHERE dict_type = ? AND dict_enable = ?
+[2m2025-04-21 18:32:59.950[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.mdiy.dao.IDictDao.query_COUNT[0;39m:135 [2m:[0;39m ==> Parameters: 栏目属性(String), true(Boolean)
+[2m2025-04-21 18:32:59.961[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.mdiy.dao.IDictDao.query_COUNT[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 18:32:59.964[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.mdiy.dao.IDictDao[0;39m:60 [2m:[0;39m Cache Hit Ratio [net.mingsoft.mdiy.dao.IDictDao]: 0.0
+[2m2025-04-21 18:32:59.965[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.mdiy.dao.IDictDao.query[0;39m:135 [2m:[0;39m ==>  Preparing: select * from mdiy_dict WHERE dict_type=? and dict_enable=? order by dict_sort desc,id desc LIMIT ?
+[2m2025-04-21 18:32:59.966[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.mdiy.dao.IDictDao.query[0;39m:135 [2m:[0;39m ==> Parameters: 栏目属性(String), true(Boolean), 99999(Integer)
+[2m2025-04-21 18:32:59.969[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.mdiy.dao.IDictDao.query[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 18:32:59.972[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:04.595[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:06.844[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:07.341[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:07.768[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:18.064[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:18.079[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:60 [2m:[0;39m errorhtml log meseeage：null,url：/html/web/newsDetail/news-detail.html
+[2m2025-04-21 18:33:22.353[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:23.957[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-5 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:23.959[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-5 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:60 [2m:[0;39m errorhtml log meseeage：null,url：/html/web/newsDetail/news-detail.html
+[2m2025-04-21 18:33:43.825[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:43.828[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:60 [2m:[0;39m errorhtml log meseeage：null,url：/html/web/newsDetail/news-detail.html
+[2m2025-04-21 18:33:52.281[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:33:52.284[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:60 [2m:[0;39m errorhtml log meseeage：null,url：/html/web/newsDetail/news-detail.html
+[2m2025-04-21 18:35:06.046[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:06.048[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:60 [2m:[0;39m errorhtml log meseeage：null,url：/html/web/newsDetail/news-detail.html
+[2m2025-04-21 18:35:06.395[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:10.307[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:11.775[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-5 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:13.488[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:14.990[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:16.899[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:22.439[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:22.441[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:60 [2m:[0;39m errorhtml log meseeage：null,url：/html/web/newsDetail/news-detail.html
+[2m2025-04-21 18:35:29.091[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:35:29.094[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:60 [2m:[0;39m errorhtml log meseeage：null,url：/html/web/newsDetail/news-detail.html
+[2m2025-04-21 18:36:53.521[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:36:57.759[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:36:57.762[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.exception.ErrorController[0;39m:60 [2m:[0;39m errorhtml log meseeage：null,url：/html/web/newsDetail/news-detail.html
+[2m2025-04-21 18:37:03.721[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:37:13.679[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:37:15.034[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-5 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:37:32.986[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:37:58.693[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:38:20.140[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:40:37.891[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-5 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:40:38.664[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:44:58.738[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:44:59.408[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:45:13.773[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:45:14.359[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:45:20.824[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:45:25.931[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:55:02.358[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:55:02.998[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-5 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:55:04.033[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:56:46.543[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:56:48.486[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:56:49.359[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-1 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:56:55.501[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:57:00.636[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-3 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:59:13.549[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:59:15.666[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 18:59:24.281[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-4 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:00:18.639[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:00:19.100[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:00:34.463[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:00:35.003[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:00:54.429[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:00:54.907[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-9 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:00:59.120[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[io-8080-exec-10 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:01:01.629[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-6 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:01:02.731[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:01:02.737[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==>  Preparing: select * from video_upload where id = ?
+[2m2025-04-21 19:01:02.738[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m ==> Parameters: 3(Integer)
+[2m2025-04-21 19:01:02.751[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-8 ][0;39m [32mnet.mingsoft.cms.mapper.VideoUploadMapper.SelectVideoId[0;39m:135 [2m:[0;39m <==      Total: 1
+[2m2025-04-21 19:01:09.851[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-5 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:01:20.778[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-2 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:01:26.288[0;39m [[32mDEBUG[0;39m] [35m3676[0;39m [2m[nio-8080-exec-7 ][0;39m [32mnet.mingsoft.basic.util.BasicUtil[0;39m:399 [2m:[0;39m headers:{}
+[2m2025-04-21 19:04:06.884[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:585 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2m2025-04-21 19:04:06.904[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:666 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+[2m2025-04-21 19:04:06.904[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:585 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+[2m2025-04-21 19:04:06.904[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[ionShutdownHook ][0;39m [32morg.quartz.core.QuartzScheduler[0;39m:740 [2m:[0;39m Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+[2m2025-04-21 19:04:06.931[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[ionShutdownHook ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:2212 [2m:[0;39m {dataSource-1} closing ...
+[2m2025-04-21 19:04:06.939[0;39m [[32m INFO[0;39m] [35m3676[0;39m [2m[ionShutdownHook ][0;39m [32mcom.alibaba.druid.pool.DruidDataSource[0;39m:2285 [2m:[0;39m {dataSource-1} closed

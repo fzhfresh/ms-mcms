@@ -18,19 +18,19 @@
         </div>
         <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
         <ul class="nav-menu">
-            <li class="nav-item"><a href="index.html" class="nav-link">首页</a></li>
+            <li class="nav-item"><a href="../shouye/index.html" class="nav-link">首页</a></li>
             <li class="nav-item">
-                <a href="products.html" class="nav-link">产品展示</a>
+                <a href="../products/index.html" class="nav-link">产品展示</a>
                 <ul class="dropdown">
-                    <li class="dropdown-item"><a href="product-detail.html" class="dropdown-link">蓝鲸先生智慧教评系统</a></li>
-                    <li class="dropdown-item"><a href="product-detail-2.html" class="dropdown-link">海浪智学数字课程平台</a></li>
-                    <li class="dropdown-item"><a href="products.html" class="dropdown-link">实训平台</a></li>
-                    <li class="dropdown-item"><a href="products.html#yiwu-card" class="dropdown-link">重工易物</a></li>
-                    <li class="dropdown-item"><a href="products.html#university-card" class="dropdown-link">我的大学</a></li>
+                    <li class="dropdown-item"><a href="../productDetail/index.html" class="dropdown-link">蓝鲸先生智慧教评系统</a></li>
+                    <li class="dropdown-item"><a href="../productDetail2/index.html" class="dropdown-link">海浪智学数字课程平台</a></li>
+                    <li class="dropdown-item"><a href="../products/index.html" class="dropdown-link">实训平台</a></li>
+                    <li class="dropdown-item"><a href="../products/index.html#yiwu-card" class="dropdown-link">重工易物</a></li>
+                    <li class="dropdown-item"><a href="../products/index.html#university-card" class="dropdown-link">我的大学</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="news.html" class="nav-link active">新闻资讯</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">关于我们</a></li>
+            <li class="nav-item"><a href="../news/index.html" class="nav-link active">新闻资讯</a></li>
+            <li class="nav-item"><a href="../about/index.html" class="nav-link">关于我们</a></li>
         </ul>
     </nav>
 </div>
@@ -38,7 +38,7 @@
 <!-- 面包屑导航 -->
 <div class="breadcrumb">
     <div class="container">
-        <a href="news.html">新闻资讯</a>
+        <a href="../news/index.html">新闻资讯</a>
         <span class="separator">></span>
         <span class="current">文章详情</span>
     </div>
@@ -66,6 +66,12 @@
                 <a href="#" class="share-btn weibo"><i class="fab fa-weibo"></i></a>
                 <a href="#" class="share-btn qq"><i class="fab fa-qq"></i></a>
             </div>
+
+            <!-- 二维码容器（初始隐藏）-->
+            <div id="weixin-qrcode">
+                <!-- 二维码将动态生成这里 -->
+            </div>
+
 
             <!-- 上一篇下一篇 -->
             <div class="article-navigation">
@@ -96,21 +102,21 @@
             <div class="footer-column">
                 <h3>产品展示</h3>
                 <ul class="footer-links">
-                    <li class="footer-link-item"><a href="product-detail.html" class="footer-link">蓝鲸先生智慧教评系统</a></li>
-                    <li class="footer-link-item"><a href="product-detail-2.html" class="footer-link">海浪智学数字课程平台</a></li>
-                    <li class="footer-link-item"><a href="products.html" class="footer-link">实训平台</a></li>
-                    <li class="footer-link-item"><a href="products.html#yiwu-card" class="footer-link">重工易物</a></li>
-                    <li class="footer-link-item"><a href="products.html#university-card" class="footer-link">我的大学</a></li>
+                    <li class="footer-link-item"><a href="../productDetail/index.html" class="footer-link">蓝鲸先生智慧教评系统</a></li>
+                    <li class="footer-link-item"><a href="../productDetail2/index.html" class="footer-link">海浪智学数字课程平台</a></li>
+                    <li class="footer-link-item"><a href="../products/index.html" class="footer-link">实训平台</a></li>
+                    <li class="footer-link-item"><a href="../products/index.html#yiwu-card" class="footer-link">重工易物</a></li>
+                    <li class="footer-link-item"><a href="../products/index.html#university-card" class="footer-link">我的大学</a></li>
                 </ul>
             </div>
             <div class="footer-column"><h3>新闻资讯</h3></div>
             <div class="footer-column">
                 <h3>关于我们</h3>
                 <ul class="footer-links">
-                    <li class="footer-link-item"><a href="about.html#company-intro" class="footer-link">公司简介</a></li>
-                    <li class="footer-link-item"><a href="about.html#company-culture" class="footer-link">企业文化</a></li>
-                    <li class="footer-link-item"><a href="about.html#team-intro" class="footer-link">团队介绍</a></li>
-                    <li class="footer-link-item"><a href="about.html#office-environment" class="footer-link">办公环境</a></li>
+                    <li class="footer-link-item"><a href="../about/index.html#company-intro" class="footer-link">公司简介</a></li>
+                    <li class="footer-link-item"><a href="../about/index.html#company-culture" class="footer-link">企业文化</a></li>
+                    <li class="footer-link-item"><a href="../about/index.html#team-intro" class="footer-link">团队介绍</a></li>
+                    <li class="footer-link-item"><a href="../about/index.html#office-environment" class="footer-link">办公环境</a></li>
                 </ul>
             </div>
         </div>
@@ -118,6 +124,9 @@
 </footer>
 
 <!-- 脚本引入 -->
-<script src="/template/1/cgsk/js/news-detail2.js"></script>
+<script src="/template/1/cgsk/js/news-detail.js"></script>
+<!-- 引入二维码生成库 -->
+<script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
 </body>
 </html>

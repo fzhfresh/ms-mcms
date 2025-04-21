@@ -70,6 +70,7 @@ ms:
     circle: 10 #干扰线条数，值越大越不容易辨别
 
 spring:
+
   main:
     allow-circular-references: true
   datasource:
@@ -103,7 +104,8 @@ spring:
   servlet:
     multipart:
       max-request-size: 100MB
-      enabled: false
+      enabled: true
+      resolve-lazily: true  # 关键配置：延迟解析
   freemarker:
     suffix: .ftl
     charset: UTF-8
@@ -133,3 +135,5 @@ mybatis-plus:
       where-strategy: not_empty #防止空串及null拼接条件
   configuration:
     database-id: mysql
+
+

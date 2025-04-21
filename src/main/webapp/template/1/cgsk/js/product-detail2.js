@@ -2,15 +2,22 @@ $(document).ready(function() {
     // 视频播放按钮点击事件
     $('.play-button').click(function() {
         const videoContainer = $(this).parent();
-        const videoFrame = $('<iframe>').attr({
-            'src': 'video/1.mp4',
-            'frameborder': '0',
-            'allowfullscreen': 'true',
-            'width': '100%',
-            'height': '100%'
-        });
-        
-        videoContainer.html(videoFrame);
+
+        // 后端获取视频路径, 通过 AJAX 请求获取视频流
+        const videoId = 4;  // 这里可以是动态获取的 ID
+        const videoUrl = `/SelectVideo/policemen/${videoId}`;
+
+        // 创建 video 元素并播放视频
+        const videoElement = $('<video controls autoplay>')
+            .attr({
+                'width': '100%',
+                'height': '100%',
+                'poster': '/template/1/cgsk/img/test3.jpg'
+            })
+            .html(`<source src="${videoUrl}" type="video/mp4">`);
+
+        // 替换视频占位符为视频播放器
+        videoContainer.html(videoElement);
     });
 
     // 特性卡片动画效果
@@ -27,18 +34,18 @@ $(document).ready(function() {
     $(window).scroll(function() {
         const windowHeight = $(window).height();
         const scrollTop = $(window).scrollTop();
-        
+
         $('section').each(function() {
             const sectionTop = $(this).offset().top;
-            
+
             if (scrollTop + windowHeight * 0.8 > sectionTop) {
                 $(this).addClass('animated');
             }
         });
-        
+
         if ($('.feature-cards').length) {
             const featureCardsTop = $('.feature-cards').offset().top;
-            
+
             if (scrollTop + windowHeight * 0.8 > featureCardsTop) {
                 $('.feature-card').each(function(index) {
                     setTimeout(() => {
@@ -50,7 +57,7 @@ $(document).ready(function() {
     });
 
     $(window).trigger('scroll');
-    
+
     // 平滑滚动到锚点
     $('a[href^="#"]').on('click', function(e) {
         e.preventDefault();

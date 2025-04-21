@@ -3,40 +3,40 @@ const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
 const navMenu = document.querySelector(".nav-menu");
 
 mobileMenuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  mobileMenuBtn.innerHTML = navMenu.classList.contains("active")
-    ? '<i class="fas fa-times"></i>'
-    : '<i class="fas fa-bars"></i>';
+    navMenu.classList.toggle("active");
+    mobileMenuBtn.innerHTML = navMenu.classList.contains("active")
+        ? '<i class="fas fa-times"></i>'
+        : '<i class="fas fa-bars"></i>';
 });
 
 const navItems = document.querySelectorAll(".nav-item");
 navItems.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    if (window.innerWidth <= 992) {
-      const dropdown = item.querySelector(".dropdown");
-      if (dropdown && e.target.closest(".nav-link")) {
-        e.preventDefault();
-        const isOpen =
-          dropdown.style.maxHeight === "500px" ||
-          dropdown.style.maxHeight === "";
-        dropdown.style.maxHeight = isOpen ? "0" : "500px";
-      } else {
-        navMenu.classList.remove("active");
-        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-      }
-    }
-  });
+    item.addEventListener("click", (e) => {
+        if (window.innerWidth <= 992) {
+            const dropdown = item.querySelector(".dropdown");
+            if (dropdown && e.target.closest(".nav-link")) {
+                e.preventDefault();
+                const isOpen =
+                    dropdown.style.maxHeight === "500px" ||
+                    dropdown.style.maxHeight === "";
+                dropdown.style.maxHeight = isOpen ? "0" : "500px";
+            } else {
+                navMenu.classList.remove("active");
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
+        }
+    });
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 992) {
-    navMenu.classList.remove("active");
-    mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-    const dropdowns = document.querySelectorAll(".dropdown");
-    dropdowns.forEach((dropdown) => {
-      dropdown.style.maxHeight = "";
-    });
-  }
+    if (window.innerWidth > 992) {
+        navMenu.classList.remove("active");
+        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+        const dropdowns = document.querySelectorAll(".dropdown");
+        dropdowns.forEach((dropdown) => {
+            dropdown.style.maxHeight = "";
+        });
+    }
 });
 
 // Banner轮播
@@ -45,17 +45,17 @@ const bannerSlides = document.querySelectorAll(".banner-slide");
 const bannerDots = document.querySelectorAll(".banner-dots .dot");
 
 function showBannerSlide(index) {
-  bannerSlides.forEach((slide) => slide.classList.remove("active"));
-  bannerDots.forEach((dot) => dot.classList.remove("active"));
+    bannerSlides.forEach((slide) => slide.classList.remove("active"));
+    bannerDots.forEach((dot) => dot.classList.remove("active"));
 
-  bannerSlides[index].classList.add("active");
-  bannerDots[index].classList.add("active");
-  currentBannerIndex = index;
+    bannerSlides[index].classList.add("active");
+    bannerDots[index].classList.add("active");
+    currentBannerIndex = index;
 }
 
 function nextBannerSlide() {
-  let nextIndex = (currentBannerIndex + 1) % bannerSlides.length;
-  showBannerSlide(nextIndex);
+    let nextIndex = (currentBannerIndex + 1) % bannerSlides.length;
+    showBannerSlide(nextIndex);
 }
 
 // 自动轮播
@@ -63,21 +63,21 @@ let bannerInterval = setInterval(nextBannerSlide, 5000);
 
 // 点击圆点切换
 bannerDots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    clearInterval(bannerInterval);
-    showBannerSlide(index);
-    bannerInterval = setInterval(nextBannerSlide, 5000);
-  });
+    dot.addEventListener("click", () => {
+        clearInterval(bannerInterval);
+        showBannerSlide(index);
+        bannerInterval = setInterval(nextBannerSlide, 5000);
+    });
 });
 
 // 鼠标悬停暂停轮播
 const banner = document.querySelector(".banner");
 banner.addEventListener("mouseenter", () => {
-  clearInterval(bannerInterval);
+    clearInterval(bannerInterval);
 });
 
 banner.addEventListener("mouseleave", () => {
-  bannerInterval = setInterval(nextBannerSlide, 5000);
+    bannerInterval = setInterval(nextBannerSlide, 5000);
 });
 
 // 产品轮播
@@ -86,89 +86,89 @@ const productSlides = document.querySelectorAll(".product-slide");
 const productDots = document.querySelectorAll(".product-dots .product-dot");
 
 function showProductSlide(index) {
-  productSlides.forEach((slide) => {
-    slide.classList.remove("active");
-    slide.style.opacity = "0";
-    slide.style.transform = "translateX(50px)";
-  });
+    productSlides.forEach((slide) => {
+        slide.classList.remove("active");
+        slide.style.opacity = "0";
+        slide.style.transform = "translateX(50px)";
+    });
 
-  setTimeout(() => {
-    productSlides[index].classList.add("active");
-    productSlides[index].style.opacity = "1";
-    productSlides[index].style.transform = "translateX(0)";
-  }, 50);
+    setTimeout(() => {
+        productSlides[index].classList.add("active");
+        productSlides[index].style.opacity = "1";
+        productSlides[index].style.transform = "translateX(0)";
+    }, 50);
 
-  productDots.forEach((dot) => dot.classList.remove("active"));
-  productDots[index].classList.add("active");
-  currentProductIndex = index;
+    productDots.forEach((dot) => dot.classList.remove("active"));
+    productDots[index].classList.add("active");
+    currentProductIndex = index;
 }
 
 // 点击圆点切换产品
 productDots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    showProductSlide(index);
-  });
+    dot.addEventListener("click", () => {
+        showProductSlide(index);
+    });
 });
 
 // 自动轮播产品
 let productInterval = setInterval(() => {
-  let nextIndex = (currentProductIndex + 1) % productSlides.length;
-  showProductSlide(nextIndex);
+    let nextIndex = (currentProductIndex + 1) % productSlides.length;
+    showProductSlide(nextIndex);
 }, 5000);
 
 // 鼠标悬停暂停产品轮播
 const productSlider = document.querySelector(".product-slider");
 productSlider.addEventListener("mouseenter", () => {
-  clearInterval(productInterval);
+    clearInterval(productInterval);
 });
 
 productSlider.addEventListener("mouseleave", () => {
-  productInterval = setInterval(() => {
-    let nextIndex = (currentProductIndex + 1) % productSlides.length;
-    showProductSlide(nextIndex);
-  }, 8000);
+    productInterval = setInterval(() => {
+        let nextIndex = (currentProductIndex + 1) % productSlides.length;
+        showProductSlide(nextIndex);
+    }, 8000);
 });
 
 // 平滑滚动
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
 
-    const targetId = this.getAttribute("href");
-    const targetElement = document.querySelector(targetId);
+        const targetId = this.getAttribute("href");
+        const targetElement = document.querySelector(targetId);
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 80,
-        behavior: "smooth",
-      });
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: "smooth",
+            });
 
-      // 更新导航菜单活动状态
-      if (targetId !== "#home") {
-        document.querySelectorAll(".nav-link").forEach((link) => {
-          link.classList.remove("active");
-        });
+            // 更新导航菜单活动状态
+            if (targetId !== "#home") {
+                document.querySelectorAll(".nav-link").forEach((link) => {
+                    link.classList.remove("active");
+                });
 
-        const navLink = document.querySelector(`.nav-link[href="${targetId}"]`);
-        if (navLink) {
-          navLink.classList.add("active");
+                const navLink = document.querySelector(`.nav-link[href="${targetId}"]`);
+                if (navLink) {
+                    navLink.classList.add("active");
+                }
+            }
+
+            // 如果是移动端，关闭菜单
+            if (window.innerWidth <= 992) {
+                navMenu.classList.remove("active");
+                mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+            }
         }
-      }
-
-      // 如果是移动端，关闭菜单
-      if (window.innerWidth <= 992) {
-        navMenu.classList.remove("active");
-        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-      }
-    }
-  });
+    });
 });
 
 // 点击圆点切换产品
 productDots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    showProductSlide(index);
-  });
+    dot.addEventListener("click", () => {
+        showProductSlide(index);
+    });
 });
 
 // 视频弹出层功能
@@ -287,14 +287,14 @@ Object.entries(dialogBoxes).forEach(([key, dialog]) => {
         dialog.btn.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            
+
             // 如果当前对话框已打开，则关闭它
             if (currentOpenDialog === key) {
                 hideElement(dialog.box);
                 currentOpenDialog = null;
                 return;
             }
-            
+
             // 关闭其他对话框，打开当前对话框
             closeAllDialogs();
             showElement(dialog.box);
@@ -351,7 +351,7 @@ if (chatSend && chatInput && chatBody) {
                 agentMessageContent.textContent = '感谢您的提问，我们会尽快为您解答！';
                 agentMessage.appendChild(agentMessageContent);
                 chatBody.appendChild(agentMessage);
-                
+
                 // 自动滚动到底部
                 chatBody.scrollTop = chatBody.scrollHeight;
             }, 1000);
@@ -396,12 +396,12 @@ const showHideQrPopup = (button, qrPopup) => {
     button.addEventListener('mouseenter', () => {
         showElement(qrPopup);
     });
-    
+
     // 鼠标离开隐藏
     button.addEventListener('mouseleave', () => {
         hideElement(qrPopup);
     });
-    
+
     // 点击切换显示/隐藏
     button.addEventListener('click', (e) => {
         e.stopPropagation(); // 阻止事件冒泡
@@ -448,7 +448,7 @@ if (followClose) {
 
 // 点击页面其他地方关闭弹窗
 document.addEventListener('click', (e) => {
-    if (!e.target.closest('.dialog-box') && 
+    if (!e.target.closest('.dialog-box') &&
         !e.target.closest('.tool-item')) {
         hideElement(hotlineBox);
         hideElement(followBox);
@@ -489,12 +489,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function animate() {
         if (!isMouseOver) {
             scrollPosition -= scrollSpeed;
-            
+
             // 当滚动到一半时（即原始logo的末尾），重置位置到开始
             if (Math.abs(scrollPosition) >= originalSetWidth) {
                 scrollPosition = 0;
             }
-            
+
             partnerTrack.style.transform = `translateX(${scrollPosition}px)`;
         }
         animationId = requestAnimationFrame(animate);
@@ -521,4 +521,79 @@ document.addEventListener('DOMContentLoaded', function() {
             animate();
         }
     });
+
+// 最新动态
+    const articles = [
+        {
+            id: 1,
+            title: '巴南区副区长杨昆一行莅临我司考察调研',
+            date: '2025年2月21日',
+            views: 1123,
+            content: '近日，巴南区委领导考察调研重工数科，肯定其发展成果，赞许其前瞻性，重工数科将借此深化与政府合作，打造技术人才培养高地。',
+            image: 'https://picsum.photos/600/400'
+        },
+        {
+            id: 2,
+            title: '我司代表出席工程学院专升本教学专题会',
+            date: '2024年12月18日',
+            views: 998,
+            content: '11月20日重庆工程学院专升本教学工作专题会上，重工数科代表汇报教学课程平台试点实施情况，下阶段将优化平台并引入更多优质课程，新功能预计下半年上线。',
+            image: 'https://picsum.photos/600/401'
+        },
+        {
+            id: 3,
+            title: '我司代表出席应用型人才培养体系建设推进会',
+            date: '2024年12月9日',
+            views: 876,
+            content: '10月25日重庆工程学院应用型人才培养体系建设推进会上，重工数科代表介绍教学课程平台情况，会议深化共识，重工数科将配合各学科领域推进教学改革并开展线上线下混合式教学服务。',
+            image: 'https://picsum.photos/600/402'
+        },
+        {
+            id: 4,
+            title: '巴南区委领导莅临我司考察调研',
+            date: '2024年11月4日',
+            views: 801,
+            content: '近日，巴南区委书记等领导赴重工数科考察，了解平台情况并听取公司发展汇报，给予肯定，赞许其设立前瞻性。',
+            image: 'https://picsum.photos/600/403'
+        }
+    ];
+
+    // 主新闻
+    const main = document.querySelector('.news-main');
+    const mainData = articles[0];
+    if (main && mainData) {
+        main.href = `../newsDetail/index.html?id=${mainData.id}`;
+        const img = main.querySelector('.news-image img');
+        const year = main.querySelector('.news-date .year');
+        const day = main.querySelector('.news-date .day');
+        const title = main.querySelector('.news-title');
+        const desc = main.querySelector('.news-desc');
+
+        if (img) img.src = mainData.image;
+        if (img) img.alt = mainData.title;
+        if (year) year.textContent = mainData.date.split('年')[0] + '年';
+        if (day) day.textContent = mainData.date.split('年')[1];
+        if (title) title.textContent = mainData.title;
+        if (desc) desc.textContent = mainData.content.slice(0, 60) + '...';
+    }
+
+    // 列表新闻
+    const items = document.querySelectorAll('.news-item');
+    for (let i = 0; i < items.length; i++) {
+        const article = articles[i + 1]; // 从第二条开始
+        if (!article) continue;
+        const item = items[i];
+        item.href = `../newsDetail/index.html?id=${article.id}`;
+
+        const year = item.querySelector('.year');
+        const day = item.querySelector('.day');
+        const title = item.querySelector('.news-item-title');
+        const desc = item.querySelector('.news-item-desc');
+
+        if (year) year.textContent = article.date.split('年')[0] + '年';
+        if (day) day.textContent = article.date.split('年')[1];
+        if (title) title.textContent = article.title;
+        if (desc) desc.textContent = article.content.slice(0, 50) + '...';
+    }
+
 });

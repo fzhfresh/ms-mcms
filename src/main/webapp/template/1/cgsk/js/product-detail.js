@@ -1,18 +1,23 @@
 $(document).ready(function() {
     // 视频播放按钮点击事件
     $('.play-button').click(function() {
-        // 这里可以替换为真实的视频播放逻辑
-        // 示例：用iframe嵌入视频
         const videoContainer = $(this).parent();
-        const videoFrame = $('<iframe>').attr({
-            'src': 'video/1.mp4',
-            'frameborder': '0',
-            'allowfullscreen': 'true',
-            'width': '100%',
-            'height': '100%'
-        });
-        
-        videoContainer.html(videoFrame);
+
+        // 从后端获取视频路径, 通过 AJAX 请求获取视频流
+        const videoId = 3;  // 这里可以是动态获取的 ID
+        const videoUrl = `/SelectVideo/policemen/${videoId}`;
+
+        // 创建 video 元素并播放视频
+        const videoElement = $('<video controls autoplay>')
+            .attr({
+                'width': '100%',
+                'height': '100%',
+                'poster': '/template/1/cgsk/img/test2.jpg'
+            })
+            .html(`<source src="${videoUrl}" type="video/mp4">`);
+
+        // 替换视频占位符为视频播放器
+        videoContainer.html(videoElement);
     });
 
     // 特性卡片动画效果
@@ -29,20 +34,20 @@ $(document).ready(function() {
     $(window).scroll(function() {
         const windowHeight = $(window).height();
         const scrollTop = $(window).scrollTop();
-        
+
         // 为每个section添加动画
         $('section').each(function() {
             const sectionTop = $(this).offset().top;
-            
+
             if (scrollTop + windowHeight * 0.8 > sectionTop) {
                 $(this).addClass('animated');
             }
         });
-        
+
         // 为特性卡片添加延迟动画
         if ($('.feature-cards').length) {
             const featureCardsTop = $('.feature-cards').offset().top;
-            
+
             if (scrollTop + windowHeight * 0.8 > featureCardsTop) {
                 $('.feature-card').each(function(index) {
                     setTimeout(() => {
@@ -55,13 +60,13 @@ $(document).ready(function() {
 
     // 触发初始滚动检查以处理已可见的元素
     $(window).trigger('scroll');
-    
+
     // 平滑滚动到锚点
     $('a[href^="#"]').on('click', function(e) {
         e.preventDefault();
-        
+
         const target = $(this.hash);
-        
+
         if (target.length) {
             $('html, body').animate({
                 scrollTop: target.offset().top - 100
@@ -174,27 +179,27 @@ particlesJS('particles-js-detail', {
 document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
     const featureCards = document.querySelectorAll('.feature-card');
-    
+
     function checkScroll() {
         sections.forEach(section => {
             const sectionTop = section.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
-            
+
             if (sectionTop < windowHeight * 0.75) {
                 section.classList.add('animated');
             }
         });
-        
+
         featureCards.forEach(card => {
             const cardTop = card.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
-            
+
             if (cardTop < windowHeight * 0.75) {
                 card.classList.add('animated');
             }
         });
     }
-    
+
     window.addEventListener('scroll', checkScroll);
     checkScroll(); // 初始检查
 }); 

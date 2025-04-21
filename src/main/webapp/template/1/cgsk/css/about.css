@@ -365,7 +365,7 @@ body {
 .culture-hero {
     height: 300px;
     position: relative;
-    background: url('img/culture-hero.jpg') center/cover no-repeat;
+    background: url('../img/culture-hero.jpg') center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;

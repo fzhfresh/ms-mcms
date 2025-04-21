@@ -56,8 +56,7 @@
     </div>
 
     <!-- 宣传视频区域 -->
-    <div class="video-banner">
-        <video src="/{ms:global.style/}video/重工数科教育服务.mp4" poster="images/img2.png" preload="metadata"></video>
+    <div class="video-banner" style="background: url('/{ms:global.style/}img/test3.jpg') no-repeat center center;background-size: 100%;">
         <div class="play-button" id="playVideo"></div>
     </div>
 
@@ -82,9 +81,17 @@
                     <img src="/{ms:global.style/}img/about-company.jpg" alt="公司简介">
                 </div>
                 <div class="about-intro-text">
-                    <p>重庆工院数字科技有限公司（重工数科）成立于2023年9月，是一家专注于教育科技领域的创新型企业。公司立足于人工智能、大数据、云计算等技术，为职业教育提供数字化教学整体解决方案。</p>
-                    <p>作为教育科技领域的领先企业，我们致力于推动产教融合、校企合作，通过技术创新助力职业教育发展。目前，公司拥有完整的数字化教学产品体系，包括智能教评系统、数字课程平台和实训平台等。</p>
-                    <p>公司核心技术团队来自教育行业和信息技术领域，凭借深厚的行业积累和技术实力，为客户提供高质量的教育科技产品和服务。</p>
+                    <!-- 如果在首页获取需要在arclist标签中指定typeid -->
+                    {ms:arclist}
+                    {ms:data dataid=field.id}
+
+                    <p>${field.content}</p>
+
+                    {/ms:data}
+                    {/ms:arclist}
+<!--                    <p>重庆工院数字科技有限公司（重工数科）成立于2023年9月，是一家专注于教育科技领域的创新型企业。公司立足于人工智能、大数据、云计算等技术，为职业教育提供数字化教学整体解决方案。</p>-->
+<!--                    <p>作为教育科技领域的领先企业，我们致力于推动产教融合、校企合作，通过技术创新助力职业教育发展。目前，公司拥有完整的数字化教学产品体系，包括智能教评系统、数字课程平台和实训平台等。</p>-->
+<!--                    <p>公司核心技术团队来自教育行业和信息技术领域，凭借深厚的行业积累和技术实力，为客户提供高质量的教育科技产品和服务。</p>-->
                 </div>
             </div>
             <!-- <div class="company-vision">

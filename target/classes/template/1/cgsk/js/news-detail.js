@@ -108,15 +108,36 @@ if (article) {
 
 // 分享功能
 document.querySelectorAll('.share-btn').forEach(btn => {
+    //微信鼠标悬停时显示二维码
+    btn.addEventListener('mouseenter', (e) => {
+        const type = btn.classList[1];
+        const title = document.querySelector('.article-title')?.textContent || '';
+        const url = window.location.href;
+
+        if (type === 'weixin') {
+            const qrContainer = document.getElementById('weixin-qrcode');
+            qrContainer.innerHTML = '';
+            new QRCode(qrContainer, {
+                text: url,
+                width: 150,
+                height: 150
+            });
+            qrContainer.style.display = 'block';
+        }
+    });
+    btn.addEventListener('mouseleave', () => {
+        const qrContainer = document.getElementById('weixin-qrcode');
+        qrContainer.style.display = 'none';
+    });
+
     btn.addEventListener('click', (e) => {
         e.preventDefault();
-        const type = btn.classList[1]; // weixin / weibo / qq
+        const type = btn.classList[1]; // 获取分享类型 weixin / weibo / qq
         const title = document.querySelector('.article-title')?.textContent || '';
         const url = window.location.href;
 
         switch (type) {
             case 'weixin':
-                alert('请打开微信扫描二维码分享');
                 break;
             case 'weibo':
                 window.open(`http://service.weibo.com/share/share.php?url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`);
@@ -128,16 +149,30 @@ document.querySelectorAll('.share-btn').forEach(btn => {
     });
 });
 
+
+
+
+
 // 平滑滚动锚点（排除无效 href）
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth' });
+        const href = this.getAttribute('href');
+
+        // 确保 href 是有效的
+        if (href && href !== '#') {
+            const target = document.querySelector(href);
+
+            // 如果目标元素存在，执行平滑滚动
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        } else {
+            console.warn('无效的锚点链接:', href);
         }
     });
 });
+
 
 // 阅读进度条
 window.addEventListener('scroll', () => {
@@ -179,3 +214,70 @@ document.querySelectorAll('.article-image img').forEach(img => {
         overlay.addEventListener('click', () => overlay.remove());
     });
 });
+
+// 动态加载 articles.json 并渲染新闻列表
+fetch('/template/1/cgsk/data/articles.json')
+    .then(response => response.json())
+    .then(data => {
+        const container = document.getElementById('news-list');
+        if (!container) {
+            console.warn('找不到 #news-list 容器，跳过渲染。');
+            return;
+        }
+
+        data.forEach(article => {
+            const card = document.createElement('div');
+            card.className = 'news-card';
+            card.innerHTML = `
+                <div class="news-image">
+                    <img src="${article.image}" alt="${article.title}">
+                </div>
+                <div class="news-content">
+                    <h3 class="news-title">${article.title}</h3>
+                    <div class="news-date">${article.date}</div>
+                    <p class="news-excerpt">${article.content.substring(0, 60)}...</p>
+                    <a href="news-detail.html?id=${article.id}" class="read-more">文章详情</a>
+                </div>
+            `;
+            container.appendChild(card);
+        });
+
+        // 悬浮效果（可选）
+        document.querySelectorAll('.news-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    })
+    .catch(error => {
+        console.error('加载新闻数据失败:', error);
+    });
+
+// 分页点击效果
+document.querySelectorAll('.pagination a').forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.querySelector('.pagination a.active')?.classList.remove('active');
+        link.classList.add('active');
+    });
+});
+
+// 平滑锚点跳转（如有）
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+
+        // 检查 href 是否有效并非 `#`，同时确认目标元素存在
+        if (href && href !== '#' && document.querySelector(href)) {
+            const target = document.querySelector(href);
+            target.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            console.warn('无效的锚点链接:', href);
+        }
+    });
+});
+
