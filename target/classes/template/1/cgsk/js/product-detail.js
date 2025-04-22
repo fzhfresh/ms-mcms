@@ -12,7 +12,7 @@ $(document).ready(function() {
             .attr({
                 'width': '100%',
                 'height': '100%',
-                'poster': '/template/1/cgsk/img/test2.jpg'  // 视频封面图
+                'poster': '/template/1/cgsk/img/test2.jpg'
             })
             .html(`<source src="${videoUrl}" type="video/mp4">`);
 

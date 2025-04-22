@@ -141,6 +141,13 @@ body {
     background-color: #07c160;
 }
 
+#weixin-qrcode {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    top: 72%;
+}
+
 .share-btn.weibo {
     background-color: #e6162d;
 }

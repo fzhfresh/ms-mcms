@@ -55,7 +55,7 @@ fetch('/template/1/cgsk/data/articles.json')
                     <h3 class="news-title">${article.title}</h3>
                     <div class="news-date">${article.date}</div>
                     <p class="news-excerpt">${article.content.substring(0, 60)}...</p>
-                    <a href="../newsDetail/news-detail.html?id=${article.id}" class="read-more">文章详情</a>
+                    <a href="../newsDetail/index.html?id=${article.id}" class="read-more">文章详情</a>
                 </div>
             `;
             container.appendChild(card);

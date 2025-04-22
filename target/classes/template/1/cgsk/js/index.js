@@ -562,7 +562,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const main = document.querySelector('.news-main');
     const mainData = articles[0];
     if (main && mainData) {
-        main.href = `../newsDetail/news-detail.html?id=${mainData.id}`;
+        main.href = `../newsDetail/index.html?id=${mainData.id}`;
         const img = main.querySelector('.news-image img');
         const year = main.querySelector('.news-date .year');
         const day = main.querySelector('.news-date .day');
@@ -583,7 +583,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const article = articles[i + 1]; // 从第二条开始
         if (!article) continue;
         const item = items[i];
-        item.href = `../newsDetail/news-detail.html?id=${article.id}`;
+        item.href = `../newsDetail/index.html?id=${article.id}`;
 
         const year = item.querySelector('.year');
         const day = item.querySelector('.day');

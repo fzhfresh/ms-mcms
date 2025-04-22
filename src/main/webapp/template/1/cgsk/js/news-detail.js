@@ -36,7 +36,10 @@ fetch('/template/1/cgsk/data/articles.json')
                 if (prevArticle) {
                     prevLink.style.display = 'block';
                     prevLink.href = `index.html?id=${prevArticle.id}`;
-                    prevLink.querySelector('span').innerText = `上一篇：${prevArticle.title}`;
+                    const prevSpan = prevLink.querySelector('span');
+                    if (prevSpan) {
+                        prevSpan.innerText = `上一篇：${prevArticle.title}`;
+                    }
                 } else {
                     prevLink.style.display = 'none';
                 }
@@ -46,11 +49,15 @@ fetch('/template/1/cgsk/data/articles.json')
                 if (nextArticle) {
                     nextLink.style.display = 'block';
                     nextLink.href = `index.html?id=${nextArticle.id}`;
-                    nextLink.querySelector('span').innerText = `下一篇：${nextArticle.title}`;
+                    const nextSpan = nextLink.querySelector('span');
+                    if (nextSpan) {
+                        nextSpan.innerText = `下一篇：${nextArticle.title}`;
+                    }
                 } else {
                     nextLink.style.display = 'none';
                 }
             }
+
         } else {
             const section = document.querySelector('.article-section');
             if (section) section.innerHTML = '<p>文章不存在。</p>';
@@ -59,6 +66,7 @@ fetch('/template/1/cgsk/data/articles.json')
     .catch(error => {
         console.error('加载文章数据失败:', error);
     });
+
 
 
 // 分享功能
@@ -107,17 +115,13 @@ document.querySelectorAll('.share-btn').forEach(btn => {
 // 平滑滚动锚点（排除无效 href）
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        e.preventDefault();
         const href = this.getAttribute('href');
 
-        // 确保 href 是有效的
-        if (href && href !== '#') {
+        // 确保 href 是有效的，并且是一个 DOM 元素的选择器
+        if (href && href !== '#' && document.querySelector(href)) {
             const target = document.querySelector(href);
-
-            // 如果目标元素存在，执行平滑滚动
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
+            target.scrollIntoView({ behavior: 'smooth' });
         } else {
             console.warn('无效的锚点链接:', href);
         }
@@ -216,17 +220,12 @@ document.querySelectorAll('.pagination a').forEach(link => {
 });
 
 // 平滑锚点跳转（如有）
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const href = this.getAttribute('href');
+document.querySelectorAll('.prev-article, .next-article').forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault(); // 阻止默认行为
+        const href = this.href;  // 获取链接的 href
 
-        // 检查 href 是否有效并非 `#`，同时确认目标元素存在
-        if (href && href !== '#' && document.querySelector(href)) {
-            const target = document.querySelector(href);
-            target.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            console.warn('无效的锚点链接:', href);
-        }
+        // 直接跳转到链接地址
+        window.location.href = href;
     });
 });

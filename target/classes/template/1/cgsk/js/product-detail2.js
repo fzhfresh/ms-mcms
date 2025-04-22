@@ -3,16 +3,16 @@ $(document).ready(function() {
     $('.play-button').click(function() {
         const videoContainer = $(this).parent();
 
-        // 假设从后端获取视频路径, 你可以通过 AJAX 请求获取视频流
+        // 后端获取视频路径, 通过 AJAX 请求获取视频流
         const videoId = 4;  // 这里可以是动态获取的 ID
-        const videoUrl = `/SelectVideo/policemen/${videoId}`;  // 这个 URL 需要是后端提供的视频流或文件路径
+        const videoUrl = `/SelectVideo/policemen/${videoId}`;
 
         // 创建 video 元素并播放视频
         const videoElement = $('<video controls autoplay>')
             .attr({
                 'width': '100%',
                 'height': '100%',
-                'poster': '/template/1/cgsk/img/test3.jpg'  // 视频封面图
+                'poster': '/template/1/cgsk/img/test3.jpg'
             })
             .html(`<source src="${videoUrl}" type="video/mp4">`);
 
